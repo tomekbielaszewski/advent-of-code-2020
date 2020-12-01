@@ -4,7 +4,8 @@
   "description": "My quirky solutions of advent of code challenge for the hellish year 2020",
   "main": "dist/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test-watch": "jest --watch"
   },
   "keywords": [
     "aod",
