@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 
-describe('Day 2 - Toboggan Trajectory', () => {
+describe('Day 3 - Toboggan Trajectory', () => {
     function part1(input: string[], right: number, down:number): number {
         let counter = 0
         let verticalOffset = 0
@@ -48,7 +48,7 @@ describe('Day 2 - Toboggan Trajectory', () => {
         console.log(`solution: ${part1(lines, 3, 1)} calculated in ${new Date().getTime() - start}ms`)
     })
 
-    it('part 1 - check if the number of letters fits into policy', () => {
+    it('part 1 - check the amount of trees on the way', () => {
         const inputStr = fs.readFileSync(path.join(__dirname, 'day3.input')).toString()
         const numbers = inputStr.split('\r\n')
 
@@ -74,7 +74,7 @@ describe('Day 2 - Toboggan Trajectory', () => {
         console.log(`solution: ${part2(numbers)} calculated in ${new Date().getTime() - start}ms`)
     })
 
-    it('part 2 - check if a letter appears on ONE of given positions', () => {
+    it('part 2 - check multiple ways', () => {
         const inputStr = fs.readFileSync(path.join(__dirname, 'day3.input')).toString()
         const numbers = inputStr.split('\r\n')
 
